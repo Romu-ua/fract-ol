@@ -25,7 +25,7 @@ int	main(int argc, char **argv)
 		if (!ft_strncmp(argv[1], "julia", 6))
 		{
 			fractol.julia_x = ft_atof(argv[2]);
-			fractol.julia_x = ft_atof(argv[3]);
+			fractol.julia_y = ft_atof(argv[3]);
 		}
 		init(&fractol);
 		render(&fractol);
