@@ -79,8 +79,12 @@ double	ft_atof(const char *str)
 	double	decimal;
 	char	*c;
 	int		len;
+	int		sign;
 
 	c = (char *)str;
+	sign = 1;
+	if (c[0] == '-')
+		sign = -1;
 	integer = (double)ft_atoi(c);
 	while (*c && *c != '.')
 		c++;
@@ -90,7 +94,7 @@ double	ft_atof(const char *str)
 	len = ft_strlen(c);
 	while (len--)
 		decimal /= 10;
-	if (integer < 0)
+	if (sign == -1)
 		return (integer - decimal);
 	else
 		return (integer + decimal);

@@ -1,4 +1,4 @@
-CC = cc -Wall -Wextra -Werror
+CC = cc -Wall -Wextra -Werror -g
 
 NAME = fractol
 SRC = main.c init.c render.c main_utils.c map.c event.c

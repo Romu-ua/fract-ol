@@ -62,5 +62,5 @@ int	close_handler(t_fractol *fractol)
 	mlx_destroy_window(fractol->mlx, fractol->mlx_win);
 	mlx_destroy_display(fractol->mlx);
 	free(fractol->mlx);
-	return (1);
+	exit(0);
 }
